@@ -43,19 +43,6 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
         mListener?.onDialogDateSet(tag, year, month, dayOfMonth)
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_date_picker, container, false)
-    }
-
     companion object {
 
     }
